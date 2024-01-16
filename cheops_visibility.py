@@ -140,11 +140,6 @@ def plot_visibility(target_list, sun_exclusion_angle_in_deg=120,
 
 
 if __name__ == "__main__":
-    target_name = ["WASP-12", "WASP-18", "HD 80606", "WASP-121", "TOI-1685",
-                   "WASP-13", "WASP-189", "HD 80606", "WASP-121", "TOI-398",
-                   "WASP-14", "WASP-11", "HD 80607", "WASP-39", "TOI-178"]
-    plot_visibility(target_name)
-    raise
     # Importing modules
     import argparse
 
