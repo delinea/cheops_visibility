@@ -136,7 +136,8 @@ if __name__ == "__main__":
     argparser_kwargs = dict(prog="CHEOPSVisibility",
                             description="Is my target visible with CHEOPS?")
     parser = argparse.ArgumentParser(**argparser_kwargs)
-    parser.add_argument("target_name", type=str, help="Name of the target")
+    parser.add_argument("target_name", type=str, nargs="+",
+                        help="Name(s) of the target(s)")
     parser.add_argument("-p", "--plot", action="store_true",
                         help="Plot the visibility")
     parser.add_argument("-sea", "--sun_exclusion_angle", default=120,
