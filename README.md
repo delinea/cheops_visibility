@@ -7,13 +7,27 @@
 optional: `tqdm`
 
 ## How to run the code
-In a terminal window:
+In a terminal window, run one of the following lines:
 - `python cheops_visibility.py TARGET_NAME` to print out the visibility range of your target `TARGET_NAME`
-- `python cheops_visibility.py TARGET_NAME -p` to display a plot with the visibility range of your target `TARGET_NAME`
+- `python cheops_visibility.py -p TARGET_NAME` to display a plot with the visibility range of your target `TARGET_NAME`
 
-For several targets:
-1. Open a Python environment
-2. Generate a list of targets `target_list` containing target names (`str`), target coordinates (`astropy.coordinates.SkyCoord`) or tuples `(target_name, target_coord)`
-3. `from cheops_visibility import get_visibility_ranges, plot_visibility`
-4. `get_visibility_ranges(target_list)` to print out the visibility ranges of your targets
-5. `plot_visibility(target_list)` to plot the visibility ranges of your targets
+For several targets, run the following code in a Python environment:
+```
+from matplotlib import pyplot as plt
+from cheops_visibility import compute_visibility_ranges
+
+# Generate a list of targets
+## the list can contain target names (str)
+target_list = ["KELT-11", "WASP-189"]
+## or target coordinates (astropy.coordinates.SkyCoord)
+target_list += [coord.SkyCoord(ra=0*u.deg, dec=0*u.deg), ]
+## or tuples in the format (target_name, target_coord)
+target_list += [("My star", coord.SkyCoord(ra=266.4168371*u.deg, dec=29.0078106*u.deg)), ]
+
+print_results = True    # to print out the visibility ranges of your targets
+plot_results = True     # to plot the visibility ranges of your targets
+visibility_ranges = compute_visibility_ranges(target_list, print_results=print_results,
+                                              plot_results=plot_results)
+if plot_results:
+    plt.show()
+```
