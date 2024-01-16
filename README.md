@@ -8,10 +8,12 @@ optional: `tqdm`
 
 ## How to run the code
 In a terminal window, run one of the following lines:
-- `python cheops_visibility.py TARGET_NAME` to print out the visibility range of your target `TARGET_NAME`
-- `python cheops_visibility.py -p TARGET_NAME` to display a plot with the visibility range of your target `TARGET_NAME`
+- `python cheops_visibility.py TARGET_NAME_1 [TARGET_NAME_2 ...]` to print out the visibility range of your targets
+- `python cheops_visibility.py -p TARGET_NAME_1 [TARGET_NAME_2 ...]` to display a plot with the visibility range of your targets
 
-For several targets, run the following code in a Python environment:
+*Note that target names with spaces should be written within quotes.*
+
+In a Python shell or notebook:
 ```
 from matplotlib import pyplot as plt
 from cheops_visibility import compute_visibility_ranges
