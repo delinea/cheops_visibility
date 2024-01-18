@@ -1,6 +1,6 @@
 # cheops_visibility
 
-`cheops_visibility.py` is a short Python script to compute wether a target is visible or not with the space telescope CHEOPS (Characterising Exoplanet Satellite; [Benz et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ExA....51..109B)).
+`cheops_visibility.py` is a short Python script to compute whether a target is visible or not with the space telescope CHEOPS (Characterising Exoplanet Satellite; [Benz et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ExA....51..109B)).
 
 ## Dependencies
 `numpy`, `matplotlib`, `astropy`  
