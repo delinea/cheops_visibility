@@ -16,6 +16,7 @@ In a terminal window, run one of the following lines:
 In a Python shell or notebook:
 ```
 from matplotlib import pyplot as plt
+from astropy import coordinates as coord, units as u
 from cheops_visibility import compute_visibility_ranges
 
 # Generate a list of targets
