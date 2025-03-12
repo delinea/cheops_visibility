@@ -140,7 +140,7 @@ if __name__ == "__main__":
                         help="Name(s) of the target(s)")
     parser.add_argument("-p", "--plot", action="store_true",
                         help="Plot the visibility")
-    parser.add_argument("-sea", "--sun_exclusion_angle", default=120,
+    parser.add_argument("-sea", "--sun_exclusion_angle", default=117,
                         type=float, help="Sun Exclusion Angle [deg]")
     parser.add_argument("-dt", "--time_resolution", default=1/24, type=float,
                         help="Temporal resolution [days]")
