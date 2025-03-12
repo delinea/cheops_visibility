@@ -2,7 +2,7 @@
 
 `cheops_visibility.py` is a short Python script to compute whether a target is visible or not with the space telescope CHEOPS (Characterising Exoplanet Satellite; [Benz et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ExA....51..109B)).
 
-*Note: This is a zero-order tool. A more evolved tool providing the CHEOPS observation efficiency is available here: https://github.com/alexishtz/CHEOPS_visibility.*
+*Note: This is a zero-order tool. More advanced tools to predict target observability and efficiency with CHEOPS are available on the [ESA Datalabs website](https://datalabs.esa.int/) (search for `cheops-vis` and `cheops-sfc` datalabs).*
 
 ## Dependencies
 `numpy`, `matplotlib`, `astropy`  
